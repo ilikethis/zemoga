@@ -1,0 +1,23 @@
+{% import 'macros/icons.html' as icons with context %}
+
+<header class="header container">
+  <h2 class="header__logo">
+    <a href="./">Rule of Thumb.</a>
+  </h2>
+  <nav class="header__nav">
+  <ul class="header__nav-list">
+    <li class="header__nav-item">
+      <a href="./trials.html">Past Trials</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="./how.html">How It Works</a>
+    </li>
+    <li class="header__nav-item">
+      <a href="#">Log In/Sign In</a>
+    </li>
+    <li class="header__nav-item">
+      {{icons.search_icon()}}
+    </li>
+  </ul>
+  </nav>
+</header>

@@ -1,0 +1,20 @@
+/***
+ * .container layout
+ *
+ ***/
+
+.container {
+  margin: 0 auto;
+  max-width: $bp-large-desktop;
+  min-width: $bp-mobile;
+  padding: 0 10px;
+  position: relative;
+
+  @include from(tablet) {
+    padding: 0 15px;
+  }
+
+  @include from(desktop) {
+    padding: 0;
+  }
+}

@@ -1,0 +1,35 @@
+/***
+  * global variables
+  *
+  * 1. Breakpoints
+  * 2. Fonts
+  * 3. colors
+***/
+
+$rem-baseline: 16px;
+
+// 1. Breakpoints
+$bp-mobile: 300px;
+$bp-tablet: 600px;
+$bp-desktop: 1000px;
+$bp-large-desktop: 1024px;
+
+$bps: (
+  'mobile': $bp-mobile,
+  'tablet': $bp-tablet,
+  'desktop': $bp-desktop,
+  );
+
+// 2. Fonts
+$font-family-base: 'Lato', sans-serif;
+
+// 3. colors
+$white: #fff;
+$black: #000;
+$orange: #b67d19;
+$green: #248f86;
+$opaque-black: rgba(0, 0, 0, .8);
+$opaque-orange: rgba(180, 123, 22, .6);
+$opaque-green: rgba(21, 132, 128, .8);
+$opaque-white: rgba(255, 255, 255, .2);
+

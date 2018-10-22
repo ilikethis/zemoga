@@ -1,0 +1,157 @@
+/***
+  * Hero Component
+  *
+***/
+
+.hero {
+  color: $white;
+  height: calc(90% - 120px);
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  @include from(tablet) {
+    height: calc(100% + 90px);
+    max-height: 520px;
+    overflow: hidden;
+  }
+
+  @include from(desktop) {
+    height: calc(100% - 50px);
+    max-height: none;
+  }
+
+  .container {
+    margin: 150px auto 0;
+
+    @include from(tablet) {
+      margin: 0 auto;
+    }
+  }
+
+  .picture {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__box {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 24px 24px 85px;
+    position: relative;
+    width: 100%;
+
+    @include from(tablet) {
+      margin: 15px 0;
+      padding: 25px 25px 75px;
+      width: 350px;
+    }
+
+    @include from(desktop) {
+      margin: 65px 20px;
+      padding: 34px 34px 115px;
+      width: 500px;
+    }
+
+    &::after {
+      background: $opaque-black;
+      bottom: -5px;
+      content: '';
+      filter: blur(8px);
+      left: -5px;
+      position: absolute;
+      right: -5px;
+      top: -5px;
+
+      @include from(tablet) {
+        background: $opaque-white;
+      }
+
+    }
+  }
+
+  &__question {
+    font-size: 14px;
+    font-weight: 300;
+    top: 0;
+  }
+
+  &__title {
+    font-size: 30px;
+    margin: 0 0 25px;
+
+    @include from(desktop) {
+      font-size: 45px;
+      margin: 0 0 20px;
+    }
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 200;
+
+    @include from(desktop) {
+      font-size: 21px;
+    }
+  }
+
+  &__wiki {
+    color: $white;
+    display: block;
+    font-size: 14px;
+    font-weight: 200;
+    margin: 20px 0 30px;
+  }
+
+  &__footnote {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__fakevote {
+    bottom: 0;
+    display: block;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+
+    @include from(desktop) {
+      height: 80px;
+    }
+
+    &::after,
+    &::before {
+      background: url(../assets/icons/like.png) no-repeat center;
+      background-color: $opaque-green;
+      background-size: 30px;
+      content: '';
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 50%;
+    }
+
+    &::before {
+      background: url(../assets/icons/disliked.png) no-repeat center;
+      background-color: $opaque-orange;
+      background-size: 30px;
+      left: auto;
+      right: 0;
+    }
+  }
+}

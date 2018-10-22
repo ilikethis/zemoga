@@ -1,0 +1,77 @@
+/***
+  * header
+  *
+  * 1. container override
+  * 2. logo
+  * 3. nav
+***/
+
+.header {
+  align-items: center;
+  color: $white;
+  display: flex;
+  height: 60px;
+  z-index: 3;
+
+  @include from(desktop) {
+    height: 100px;
+  }
+
+  // 1. container override
+  &.container {
+    margin: 0 auto;
+  }
+
+  // 2. logo
+  &__logo {
+    flex-grow: 8;
+    font-size: 16px;
+    font-weight: 500;
+
+    @include from(desktop) {
+      font-size: 22px;
+      padding: 0 20px;
+    }
+
+    @include from(desktop) {
+      font-size: 32px;
+    }
+
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  // 3. nav
+  &__nav {
+    flex-grow: 1;
+    font-size: 13px;
+
+    @include from(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__nav-item {
+    a {
+      color: $white;
+      font-weight: 200;
+      text-decoration: none;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__nav-item {
+    display: inline-block;
+    margin: 0 5px;
+
+    @include from(tablet) {
+      margin: 0 20px;
+    }
+  }
+}

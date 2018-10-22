@@ -1,0 +1,67 @@
+/***
+  * footer
+  *
+  * 1. container override
+  * 2. social
+  * 3. nav
+***/
+
+.footer {
+  align-items: end;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  padding: 10px 20px;
+  z-index: 3;
+
+  @include from(desktop) {
+    align-items: center;
+    flex-direction: row;
+    height: 100px;
+  }
+
+  // 1. container override
+  &.container {
+    margin: 0 auto;
+  }
+
+  // 2. social
+  &__social {
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+  }
+
+  // 3. nav
+  &__nav-item {
+    a {
+      color: $black;
+      font-weight: 200;
+      text-decoration: none;
+    }
+  }
+
+  &__nav {
+    flex-grow: 8;
+    font-size: 13px;
+
+    @include from(desktop) {
+      font-size: 16px;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__nav-item {
+    display: inline-block;
+    margin: 0 5px;
+
+    @include from(tablet) {
+      margin: 0 20px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "zemoga-dom",
+  "version": "1.0.0",
+  "description": "test front end developer",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@daosme",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "compression": "^1.7.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-babel-minify": "^0.5.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^1.0.2",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-nunjucks": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-lint": "^1.4.0",
+    "gulp-serve": "^1.4.0",
+    "gulp-uglify": "^3.0.1",
+    "recursive-readdir-sync": "^1.0.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "normalize.css": "4.0.0",
+    "sass-rem": "1.2.2",
+    "smoothscroll-polyfill": "0.4.0"
+  }
+}

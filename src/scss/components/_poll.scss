@@ -1,0 +1,95 @@
+/***
+  * Poll component
+  *
+***/
+
+.poll {
+  z-index: 2;
+
+  &__progress {
+    background: url(../assets/icons/disliked.png) no-repeat 98% center;
+    background-color: $opaque-orange;
+    background-size: 25px;
+    bottom: 0;
+    font-size: 20px;
+    font-weight: 200;
+    height: 49px;
+    left: 0;
+    position: absolute;
+    right: 0;
+
+    @include from(desktop) {
+      font-size: 29px;
+    }
+  }
+
+  &__bar {
+    align-items: center;
+    background: url(../assets/icons/like.png) no-repeat 11px center;
+    background-color: $opaque-green;
+    background-size: 25px;
+    display: flex;
+    height: 100%;
+    left: 0;
+    max-width: 90%;
+    padding-left: 50px;
+    position: absolute;
+    transition: .3s ease;
+    transition-delay: .2s;
+    width: 0;
+    z-index: 2;
+  }
+
+  &__regression {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: absolute;
+    right: 40px;
+  }
+
+  &__register {
+    bottom: 27%;
+    left: 20px;
+    position: absolute;
+    text-align: center;
+
+    @include from(desktop) {
+      left: 40px;
+    }
+  }
+
+  &__again {
+    background: rgba(0, 0, 0, .3);
+    border: solid 1px $white;
+    color: $white;
+    display: none;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    .visible & {
+      display: block;
+    }
+  }
+
+  &__btns {
+    &.hide {
+      visibility: hidden;
+    }
+  }
+
+  &__btn {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    position: relative;
+
+    &-trigger {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 3;
+    }
+  }
+}

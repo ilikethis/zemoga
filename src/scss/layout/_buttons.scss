@@ -1,0 +1,31 @@
+/***
+  * Button styles
+  *
+  * 1. colors
+  * 2. active state
+***/
+
+.btn {
+  border: 0;
+  min-height: 34px;
+  min-width: 24px;
+  vertical-align: super;
+
+  // 1. colors
+  &--orange {
+    background: $orange;
+  }
+
+  &--green {
+    background: $green;
+  }
+
+  // 2. active state
+  &__trigger {
+    border: 1px solid transparent;
+
+    &.active {
+      border-color: $white;
+    }
+  }
+}

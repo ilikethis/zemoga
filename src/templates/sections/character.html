@@ -1,0 +1,17 @@
+{% import 'macros/icons.html' as icons with context %}
+
+<h2 class="character__title container">{{section.body.title}}</h2>
+<section class="characters{% if section.classes %} characters--{{section.classes}}{% endif %} container">
+{% if section.characters %}
+  {% for character in section.characters %}
+    <div class="character" data-character-component="{{character.name | replace(' ', '-') | lower}}">
+      {{picture(character.picture)}}
+      <div class="character__content">
+        <h2 class="character__name">{{character.name}}</h2>
+        <p data-thanks-vote="Thank you for voting!" class="js-character-desc character__desc">{{character.description}}</p>
+        {% include "partials/poll.html" %}
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}
+</section>

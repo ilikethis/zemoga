@@ -1,0 +1,26 @@
+{% import 'macros/icons.html' as icons with context %}
+
+{# votes component #}
+{% set character_id = character.name | replace(" ", "-") | lower %}
+
+<div class="poll" data-poll-component="{{character_id}}">
+  <div class="js-poll-btns poll__btns">
+    <button class="btn btn--green poll__btn">
+      <span class="js-btn-like btn__trigger poll__btn-trigger"></span>
+      {{icons.like_icon(size='20')}}
+    </button>
+    <button class="btn btn--orange poll__btn">
+      <span class="js-btn-dislike btn__trigger poll__btn-trigger"></span>
+      {{icons.dislike_icon(size='20')}}
+    </button>
+  </div>
+
+  <div class="poll__progress">
+    <span class="js-progress-bar poll__bar"></span>
+    <span class="js-regression-bar poll__regression"></span>
+  </div>
+
+  <div class="js-poll-reg poll__register">
+    <a href="#" class="js-btn-again poll__again">Vote again</a>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+{% from 'macros/picture.html' import picture with context %}
+
+<section class="hero{% if section.classes %} hero--{{section.classes}}{% endif %}">
+  {# including the header here to match designs #}
+  {% include 'inc/header.html' %}
+
+  {{picture(section.picture)}}
+  <div class="container">
+    <div class="hero__box">
+      <div class="hero__content">
+        <sup class="hero__question">{{section.body.question}}</sup>
+        <h1 class="hero__title">{{section.body.title}}</h1>
+        <p class="hero__description">{{section.body.description}}</p>
+        <a href="{{section.body.info.link}}" class="hero__wiki">{{section.body.info.text}}</a>
+        <span class="hero__footenote">{{section.body.veredict}}</span>
+      </div>
+      <div class="hero__fakevote"></div>
+    </div>
+  </div>
+</section>

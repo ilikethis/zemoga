@@ -1,0 +1,13 @@
+{% macro picture(data) %}
+  {% if data %}
+  <picture class="picture">
+    {% if data.desktop %}
+    <source media="(min-width: 650px)" srcset="{{data.desktop}}">
+    {% endif %}
+    {% if data.tablet %}
+    <source media="(min-width: 465px)" srcset="{{data.tablet}}">
+    {% endif %}
+    <img src="{{data.mobile}}" alt="{{data.alt}}">
+  </picture>
+  {% endif %}
+{% endmacro %}

@@ -1,0 +1,89 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "body": {
+        "question": "What’s your opinion on",
+        "title": "Pope Francis?",
+        "description": "He’s talking tough on clergy sexual abuse, but is he just another papal pervert protector? (thumbs down) or a true pedophile punishing pontiff? (thumbs up)",
+        "info": {
+          "link": "http://wikipedia.com",
+          "text": "More Information"
+        },
+        "veredict": "What's Your Veredict?",
+        "deadline": 22
+      },
+      "picture": {
+        "alt": "pope",
+        "mobile": "https://www.thetablet.co.uk/UserFiles/images/news/PA-35756037.jpg",
+        "tablet": "",
+        "desktop": ""
+      },
+      "image": "https://www.thetablet.co.uk/UserFiles/images/news/PA-35756037.jpg"
+    },
+    {
+      "type": "character",
+      "body": {
+        "title": "Previous Rulings"
+      },
+      "characters": [
+        {
+          "name": "Kanye West",
+          "picture": {
+            "alt": "alt_text",
+            "mobile": "http://niuerdata.donews.com/data/shareimg_oss/big_media_img/2018/04/29/5a713035a7ce33ac538bd38e565817a2.JPEG",
+            "tablet": "",
+            "desktop": ""
+          },
+          "experience": {
+            "time": "1 month ago",
+            "kind": "Entertainment"
+          },
+          "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero."
+        },
+        {
+          "name": "Mark Zuckerberg",
+          "picture": {
+            "alt": "alt_text",
+            "mobile": "https://someguynamedkevin.files.wordpress.com/2013/03/mr-carter.jpg",
+            "tablet": "",
+            "desktop": ""
+          },
+          "experience": {
+            "time": "1 month ago",
+            "kind": "Business"
+          },
+          "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero."
+        },
+        {
+          "name": "Cristina Fernández de Kirchner",
+          "picture": {
+            "alt": "alt_text",
+            "mobile": "https://collegecandy.files.wordpress.com/2016/10/screen-shot-2016-10-10-at-3-54-38-pm.png?w=750",
+            "tablet": "",
+            "desktop": ""
+          },
+          "experience": {
+            "time": "1 month ago",
+            "kind": "Politics"
+          },
+          "description": "Vestibulum diam ante, porttitor a odio eget, rhoncus neque. Aenean eu velit libero."
+        },
+        {
+          "name": "Malala Yousafzai",
+          "picture": {
+            "alt": "alt_text",
+            "mobile": "https://storage.googleapis.com/relevant-magazine/2017/06/Screen-Shot-2014-10-10-at-4.00.27-PM.png",
+            "tablet": "",
+            "desktop": ""
+          },
+          "experience": {
+            "time": "1 month ago",
+            "kind": "Entertainment"
+          },
+          "description": "https://i.pinimg.com/736x/bb/16/9c/bb169cf5b94a873040478eb03926eead.jpg"
+        }
+      ]
+    }
+  ]
+}
